@@ -246,6 +246,8 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib/libwms.so:vendor/lib/libwms.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libxml.so:vendor/lib/libxml.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/activity_recognition.bullhead.so:vendor/lib/hw/activity_recognition.bullhead.so \
+	device/lge/bullhead-vendorimage/vendor/lib/hw/bluetooth.default.so:vendor/lib/hw/bluetooth.default.so \
+	device/lge/bullhead-vendorimage/vendor/lib/hw/nfc_nci.bullhead.so:vendor/lib/hw/nfc_nci.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/gatekeeper.msm8992.so:vendor/lib/hw/gatekeeper.msm8992.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/keystore.msm8992.so:vendor/lib/hw/keystore.msm8992.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/sensors.bullhead.so:vendor/lib/hw/sensors.bullhead.so \
@@ -378,6 +380,8 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/egl/libq3dtools_adreno.so:vendor/lib64/egl/libq3dtools_adreno.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/egl/libq3dtools_esx.so:vendor/lib64/egl/libq3dtools_esx.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/activity_recognition.bullhead.so:vendor/lib64/hw/activity_recognition.bullhead.so \
+        device/lge/bullhead-vendorimage/vendor/lib64/hw/bluetooth.default.so:vendor/lib64/hw/bluetooth.default.so \
+        device/lge/bullhead-vendorimage/vendor/lib64/hw/nfc_nci.bullhead.so:vendor/lib64/hw/nfc_nci.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/fingerprint.bullhead.so:vendor/lib64/hw/fingerprint.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/flp.default.so:vendor/lib64/hw/flp.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/gatekeeper.msm8992.so:vendor/lib64/hw/gatekeeper.msm8992.so \
