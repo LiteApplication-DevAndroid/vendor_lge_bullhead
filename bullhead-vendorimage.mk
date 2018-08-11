@@ -473,7 +473,8 @@ PRODUCT_PACKAGES += \
 
 # Compatible device packages
 PRODUCT_PACKAGES += \
-	datastatusnotification
+	datastatusnotification \
+	ims
 
 # device/media
 PRODUCT_COPY_FILES += \
