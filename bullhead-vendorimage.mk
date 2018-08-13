@@ -114,6 +114,8 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib/libjpegdhw.so:vendor/lib/libjpegdhw.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libjpegdmahw.so:vendor/lib/libjpegdmahw.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libjpegehw.so:vendor/lib/libjpegehw.so \
+	device/lge/bullhead-vendorimage/vendor/lib/libkeymaster_staging.so:vendor/lib/libkeymaster_staging.so \
+	device/lge/bullhead-vendorimage/vendor/lib/libsoftkeymaster.so:vendor/lib/libsoftkeymaster.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libkmcrypto.so:vendor/lib/libkmcrypto.so \
 	device/lge/bullhead-vendorimage/vendor/lib/liblistensoundmodel2.so:vendor/lib/liblistensoundmodel2.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libllvm-glnext.so:vendor/lib/libllvm-glnext.so \
@@ -249,6 +251,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/bluetooth.default.so:vendor/lib/hw/bluetooth.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/nfc_nci.bullhead.so:vendor/lib/hw/nfc_nci.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/gatekeeper.msm8992.so:vendor/lib/hw/gatekeeper.msm8992.so \
+	device/lge/bullhead-vendorimage/vendor/lib/hw/keystore.default.so:vendor/lib/hw/keystore.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/keystore.msm8992.so:vendor/lib/hw/keystore.msm8992.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/sensors.bullhead.so:vendor/lib/hw/sensors.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/sound_trigger.primary.msm8992.so:vendor/lib/hw/sound_trigger.primary.msm8992.so \
@@ -314,6 +317,8 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsvt.so:vendor/lib64/lib-imsvt.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsxml.so:vendor/lib64/lib-imsxml.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libizat_core.so:vendor/lib64/libizat_core.so \
+	device/lge/bullhead-vendorimage/vendor/lib64/libkeymaster_staging.so:vendor/lib64/libkeymaster_staging.so \
+	device/lge/bullhead-vendorimage/vendor/lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libkmcrypto.so:vendor/lib64/libkmcrypto.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/liblbs_core.so:vendor/lib64/liblbs_core.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/liblistensoundmodel2.so:vendor/lib64/liblistensoundmodel2.so \
@@ -385,6 +390,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/fingerprint.bullhead.so:vendor/lib64/hw/fingerprint.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/flp.default.so:vendor/lib64/hw/flp.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/gatekeeper.msm8992.so:vendor/lib64/hw/gatekeeper.msm8992.so \
+	device/lge/bullhead-vendorimage/vendor/lib64/hw/keystore.default.so:vendor/lib64/hw/keystore.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/keystore.msm8992.so:vendor/lib64/hw/keystore.msm8992.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/sensors.bullhead.so:vendor/lib64/hw/sensors.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/sound_trigger.primary.msm8992.so:vendor/lib64/hw/sound_trigger.primary.msm8992.so \
