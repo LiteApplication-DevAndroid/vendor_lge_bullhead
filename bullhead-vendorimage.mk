@@ -16,6 +16,7 @@
 
 # device/bin
 PRODUCT_COPY_FILES += \
+	device/lge/bullhead-vendorimage/vendor/bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon \
 	device/lge/bullhead-vendorimage/vendor/bin/nanoapp_cmd:vendor/bin/nanoapp_cmd \
 	device/lge/bullhead-vendorimage/vendor/bin/qseecomd:vendor/bin/qseecomd \
 	device/lge/bullhead-vendorimage/vendor/bin/qti:vendor/bin/qti \
