@@ -43,7 +43,6 @@ LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
-ifeq ($(TARGET_USES_SOURCE_VENDOR_IMAGE),true)
 include $(CLEAR_VARS)
 LOCAL_MODULE := VendorLinks
 LOCAL_MODULE_OWNER := lge
@@ -70,6 +69,7 @@ LOCAL_POST_INSTALL_CMD := \
         ln -sf /vendor/lib/egl/libq3dtools_esx.so $(PRODUCT_OUT)/vendor/lib/libq3dtools_esx.so; }
 
 include $(BUILD_PHONY_PACKAGE)
-endif
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
