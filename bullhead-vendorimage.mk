@@ -487,6 +487,13 @@ PRODUCT_PACKAGES += \
 	datastatusnotification \
 	ims
 
+# Overlay
+PRODUCT_PACKAGES += \
+	PixelThemeOverlay
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
+
 # device/media
 PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/media/LMspeed_508.emd:vendor/media/LMspeed_508.emd \
