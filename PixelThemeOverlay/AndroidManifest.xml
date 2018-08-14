@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.theme.pixel"
+    android:versionCode="27"
+    android:versionName="8.1.0">
+    <overlay android:targetPackage="android" android:priority="1"/>
+
+    <application android:label="@string/pixel_overlay_pixel" android:hasCode="false"/>
+</manifest>
