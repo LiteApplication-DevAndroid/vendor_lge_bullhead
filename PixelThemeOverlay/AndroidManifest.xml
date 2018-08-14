@@ -1,8 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.theme.pixel"
-    android:versionCode="27"
-    android:versionName="8.1.0">
-    <overlay android:targetPackage="android" android:priority="1"/>
-
-    <application android:label="@string/pixel_overlay_pixel" android:hasCode="false"/>
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.google.android.theme.pixel" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <overlay android:category="android.theme" android:priority="1" android:targetPackage="android"/>
+    <application android:hasCode="false" android:label="@string/pixel_overlay_pixel"/>
 </manifest>
