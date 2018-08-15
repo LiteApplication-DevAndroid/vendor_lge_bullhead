@@ -252,7 +252,6 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/bluetooth.default.so:vendor/lib/hw/bluetooth.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/nfc_nci.bullhead.so:vendor/lib/hw/nfc_nci.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/gatekeeper.msm8992.so:vendor/lib/hw/gatekeeper.msm8992.so \
-	device/lge/bullhead-vendorimage/vendor/lib/hw/keystore.default.so:vendor/lib/hw/keystore.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/keystore.msm8992.so:vendor/lib/hw/keystore.msm8992.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/sensors.bullhead.so:vendor/lib/hw/sensors.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib/hw/sound_trigger.primary.msm8992.so:vendor/lib/hw/sound_trigger.primary.msm8992.so \
@@ -391,7 +390,6 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/fingerprint.bullhead.so:vendor/lib64/hw/fingerprint.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/flp.default.so:vendor/lib64/hw/flp.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/gatekeeper.msm8992.so:vendor/lib64/hw/gatekeeper.msm8992.so \
-	device/lge/bullhead-vendorimage/vendor/lib64/hw/keystore.default.so:vendor/lib64/hw/keystore.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/keystore.msm8992.so:vendor/lib64/hw/keystore.msm8992.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/sensors.bullhead.so:vendor/lib64/hw/sensors.bullhead.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/sound_trigger.primary.msm8992.so:vendor/lib64/hw/sound_trigger.primary.msm8992.so \
@@ -498,3 +496,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/media/LMspeed_508.emd:vendor/media/LMspeed_508.emd \
 	device/lge/bullhead-vendorimage/vendor/media/PFFprec_600.emd:vendor/media/PFFprec_600.emd
+
+PRODUCT_COPY_FILES += \
+	device/lge/bullhead-vendorimage/vendor/lib/libmediacodecservice.so:vendor/lib/libmediacodecservice.so \
+	device/lge/bullhead-vendorimage/vendor/lib/libminijail_vendor.so:vendor/lib/libminijail_vendor.so \
+	device/lge/bullhead-vendorimage/vendor/lib/hw/context_hub.default.so:vendor/lib/hw/context_hub.default.so \
+	device/lge/bullhead-vendorimage/vendor/lib64/hw/context_hub.default.so:vendor/lib64/hw/context_hub.default.so \
+	device/lge/bullhead-vendorimage/vendor/lib64/libminijail_vendor.so:vendor/lib64/libminijail_vendor.so \
+	device/lge/bullhead-vendorimage/vendor/lib64/libselinux_vendor.so:vendor/lib64/libselinux_vendor.so
