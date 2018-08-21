@@ -115,8 +115,6 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib/libjpegdhw.so:vendor/lib/libjpegdhw.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libjpegdmahw.so:vendor/lib/libjpegdmahw.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libjpegehw.so:vendor/lib/libjpegehw.so \
-	device/lge/bullhead-vendorimage/vendor/lib/libkeymaster_staging.so:vendor/lib/libkeymaster_staging.so \
-	device/lge/bullhead-vendorimage/vendor/lib/libsoftkeymaster.so:vendor/lib/libsoftkeymaster.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libkmcrypto.so:vendor/lib/libkmcrypto.so \
 	device/lge/bullhead-vendorimage/vendor/lib/liblistensoundmodel2.so:vendor/lib/liblistensoundmodel2.so \
 	device/lge/bullhead-vendorimage/vendor/lib/libllvm-glnext.so:vendor/lib/libllvm-glnext.so \
@@ -317,8 +315,6 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsvt.so:vendor/lib64/lib-imsvt.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsxml.so:vendor/lib64/lib-imsxml.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libizat_core.so:vendor/lib64/libizat_core.so \
-	device/lge/bullhead-vendorimage/vendor/lib64/libkeymaster_staging.so:vendor/lib64/libkeymaster_staging.so \
-	device/lge/bullhead-vendorimage/vendor/lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libkmcrypto.so:vendor/lib64/libkmcrypto.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/liblbs_core.so:vendor/lib64/liblbs_core.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/liblistensoundmodel2.so:vendor/lib64/liblistensoundmodel2.so \
