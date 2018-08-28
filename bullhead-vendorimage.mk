@@ -301,9 +301,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/libgsl.so:vendor/lib64/libgsl.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libhubconnection.so:vendor/lib64/libhubconnection.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libidl.so:vendor/lib64/libidl.so \
-	device/lge/bullhead-vendorimage/vendor/lib64/libimscamera_jni.so:vendor/lib64/libimscamera_jni.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsdpl.so:vendor/lib64/lib-imsdpl.so \
-	device/lge/bullhead-vendorimage/vendor/lib64/libimsmedia_jni.so:vendor/lib64/libimsmedia_jni.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsqimf.so:vendor/lib64/lib-imsqimf.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-imsrcscmclient.so:vendor/lib64/lib-imsrcscmclient.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/lib-ims-rcscmjni.so:vendor/lib64/lib-ims-rcscmjni.so \
@@ -479,7 +477,7 @@ PRODUCT_PACKAGES += \
 # Compatible device packages
 PRODUCT_PACKAGES += \
 	datastatusnotification \
-	ims
+	imssettings
 
 # Overlay
 PRODUCT_PACKAGES += \
@@ -500,3 +498,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/bullhead-vendorimage/vendor/lib64/hw/context_hub.default.so:vendor/lib64/hw/context_hub.default.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libminijail_vendor.so:vendor/lib64/libminijail_vendor.so \
 	device/lge/bullhead-vendorimage/vendor/lib64/libselinux_vendor.so:vendor/lib64/libselinux_vendor.so
+
+# IMS
+DEVICE_PACKAGE_OVERLAYS := \
+    device/lge/bullhead-vendorimage/overlay

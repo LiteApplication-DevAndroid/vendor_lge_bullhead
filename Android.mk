@@ -32,9 +32,9 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ims
+LOCAL_MODULE := imssettings
 LOCAL_MODULE_OWNER := lge
-LOCAL_SRC_FILES := vendor/app/ims/ims.apk
+LOCAL_SRC_FILES := vendor/app/imssettings/imssettings.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -50,9 +50,9 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_POST_INSTALL_CMD := \
         test -s vendor/lge/bullhead/proprietary/prebuilt/target/product/msm8992/system/etc/izat.conf || { \
-        mkdir -p $(PRODUCT_OUT)/vendor/app/ims/lib/arm64; \
-        ln -sf /vendor/lib64/libimscamera_jni.so $(PRODUCT_OUT)/vendor/app/ims/lib/arm64/libimscamera_jni.so; \
-        ln -sf /vendor/lib64/libimsmedia_jni.so $(PRODUCT_OUT)/vendor/app/ims/lib/arm64/libimsmedia_jni.so; \
+        mkdir -p $(PRODUCT_OUT)/system/app/ims/lib/arm64; \
+        ln -sf /system/lib64/libimscamera_jni.so $(PRODUCT_OUT)/system/app/ims/lib/arm64/libimscamera_jni.so; \
+        ln -sf /system/lib64/libimsmedia_jni.so $(PRODUCT_OUT)/system/app/ims/lib/arm64/libimsmedia_jni.so; \
         mkdir -p $(PRODUCT_OUT)/vendor/lib64; \
         mkdir -p $(PRODUCT_OUT)/vendor/lib; \
         ln -sf /vendor/lib64/egl/eglSubDriverAndroid.so $(PRODUCT_OUT)/vendor/lib64/eglSubDriverAndroid.so; \
