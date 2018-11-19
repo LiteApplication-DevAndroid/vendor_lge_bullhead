@@ -15,11 +15,16 @@
 
 $(call inherit-product, vendor/lge/bullhead/bullhead-vendor-blobs.mk)
 
+# Links
+PRODUCT_PACKAGES += \
+    AudioLinks \
+    VendorLinks
+
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
     datastatusnotification \
     HiddenMenu \
-    ims \
+    imssettings \
     RCSBootstraputil \
     RcsImsBootstraputil \
     TimeService \
@@ -57,3 +62,26 @@ PRODUCT_PACKAGES += \
     libimscamera_jni.so \
     libdmengine.so \
     libdmjavaplugin.so
+    
+include $(CLEAR_VARS)
+LOCAL_MODULE := VendorLinks
+LOCAL_MODULE_OWNER := lge
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_POST_INSTALL_CMD := \
+        test -s vendor/lge/bullhead/proprietary/prebuilt/target/product/msm8992/system/etc/izat.conf || { \
+        mkdir -p $(PRODUCT_OUT)/vendor/lib64; \
+        mkdir -p $(PRODUCT_OUT)/vendor/lib; \
+        ln -sf /vendor/lib64/egl/eglSubDriverAndroid.so $(PRODUCT_OUT)/vendor/lib64/eglSubDriverAndroid.so; \
+        ln -sf /vendor/lib/egl/eglSubDriverAndroid.so $(PRODUCT_OUT)/vendor/lib/eglSubDriverAndroid.so; \
+        ln -sf /vendor/lib64/egl/libEGL_adreno.so $(PRODUCT_OUT)/vendor/lib64/libEGL_adreno.so; \
+        ln -sf /vendor/lib/egl/libEGL_adreno.so $(PRODUCT_OUT)/vendor/lib/libEGL_adreno.so; \
+        ln -sf /vendor/lib64/egl/libGLESv1_CM_adreno.so $(PRODUCT_OUT)/vendor/lib64/libGLESv1_CM_adreno.so; \
+        ln -sf /vendor/lib/egl/libGLESv1_CM_adreno.so $(PRODUCT_OUT)/vendor/lib/libGLESv1_CM_adreno.so; \
+        ln -sf /vendor/lib64/egl/libGLESv2_adreno.so $(PRODUCT_OUT)/vendor/lib64/libGLESv2_adreno.so; \
+        ln -sf /vendor/lib/egl/libGLESv2_adreno.so $(PRODUCT_OUT)/vendor/lib/libGLESv2_adreno.so; \
+        ln -sf /vendor/lib64/egl/libq3dtools_adreno.so $(PRODUCT_OUT)/vendor/lib64/libq3dtools_adreno.so; \
+        ln -sf /vendor/lib/egl/libq3dtools_adreno.so $(PRODUCT_OUT)/vendor/lib/libq3dtools_adreno.so; \
+        ln -sf /vendor/lib64/egl/libq3dtools_esx.so $(PRODUCT_OUT)/vendor/lib64/libq3dtools_esx.so; \
+        ln -sf /vendor/lib/egl/libq3dtools_esx.so $(PRODUCT_OUT)/vendor/lib/libq3dtools_esx.so; }
+    
