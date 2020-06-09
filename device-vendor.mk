@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/lge/bullhead/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
     vendor/lge/bullhead/proprietary/bin/thermal-engine:system/bin/thermal-engine \
-    vendor/lge/bullhead/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/lge/bullhead/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/lge/bullhead/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/lge/bullhead/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -525,5 +524,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
-    datastatusnotification \
-    ims
+    datastatusnotifications
