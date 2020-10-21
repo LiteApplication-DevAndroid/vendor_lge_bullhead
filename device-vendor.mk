@@ -523,4 +523,5 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/media/PFFprec_600.emd:$(TARGET_COPY_OUT_VENDOR)/media/PFFprec_600.emd
 
 PRODUCT_PACKAGES += \
+    libtime_genoff \
     datastatusnotifications
